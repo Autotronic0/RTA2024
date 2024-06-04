@@ -14,6 +14,8 @@ WORKDIR /app
 
 COPY --from=builder /app .
 
+COPY app.py .
+
 ENV FLASK_APP=app
 
 EXPOSE 8000
